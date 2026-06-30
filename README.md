@@ -40,7 +40,7 @@ Ensure you have [Node.js (v18+)](https://nodejs.org/) installed before proceedin
 ### 1. Clone & Install Dependencies
 To install all required packages—including the packaging and converter components—run:
 ```bash
-git clone https://github.com/your-username/chronospro-studio.git
+git clone https://github.com/h-o7/chronospro-studio.git
 cd chronospro-studio
 npm install
 ```
