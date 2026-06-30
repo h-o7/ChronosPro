@@ -20,7 +20,6 @@ ChronosPro Studio is fully deployed and accessible online in both development an
 *   **🔄 Persistent Multi-Tab Workspace**: Switch seamlessly between the **Timelapse Workspace**, the **HEIC Converter**, and the **Work Log Console** without losing any uploaded sequence frames or active conversion queues.
 *   **💾 Offline Backup & Restore (Save/Import Workspace)**: Explicitly package, export, and download your entire active timeline state (including full base64-encoded file buffers, active logs, and custom profiles) as a `.json` backup file. Easily import this file at any time to recover your project in the event of browser/system crashes.
 *   **⚡ Built-in HEIC Batch Converter**: A high-performance, offline batch converter that translates raw HEIC/HEIF images (and compressed PNG, WEBP, BMP, etc.) into baseline JPEGs with customizable sub-sampling quality and resolution constraints.
-*   **📊 Handbrake-Style Work Log Console**: Toggles a real-time, verbose troubleshooting output monitor showing precise image dimensions, EXIF tag decoding metadata, codec initialization parameters, frame-by-frame encoding processes, and detailed export metrics.
 *   **📐 Resolution Safety & Aspect Auto-Correction**: Automatically detects discrepancies in photo dimensions. Includes an intelligent even-pixel resize algorithm to enforce exact codec specifications and prevent hardware video encoder crashes.
 *   **🏎️ Custom Speed Engine**: Adjust frame rate limits (FPS) and multiplier speeds (frame skipping or repeating) to match your desired timeline pace.
 *   **🎯 Multiple Aspect Ratios & Resizing**: Supports **Original (Match Source)**, **16:9 Cinema Wide**, **4:3 Vintage Film**, **1:1 Social Square**, and **9:16 Portrait Reel**, keeping your original dimensions cleanly centered.
@@ -29,7 +28,6 @@ ChronosPro Studio is fully deployed and accessible online in both development an
     *   **High (45 Mbps Studio)**: Balanced full-HD/4K production quality with minimal compression artifacts.
     *   **Standard (5 Mbps Compact)**: Ideal for fast uploads, social media sharing, and lightweight email attachments.
 *   **📼 Flexible Formats**: Render and download directly to lossless-bounded **WebM**, container-wrapped **MP4**, or dynamic sequential **Frame ZIPs**.
-*   **🎞️ Interactive Timeline & Viewer**: Drag-and-drop upload sequences, preview individual frames, inspect metadata, zoom to check alignment, and play the timeline before initiating final exports.
 
 ---
 
