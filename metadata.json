@@ -1,0 +1,8 @@
+{
+  "name": "ChronosPro",
+  "description": "Batch convert/compress image files to create stunning photo timelapses from JPG, GIF, and Nikon Raw (NEF) photos with customizable frame rates, dynamic speed controls, auto-sequencing, and high-resolution exports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

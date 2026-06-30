@@ -1,0 +1,78 @@
+/* 
+  =============================================================================
+  ChronosPro Studio Style Sheet & Custom Theme Guide
+  =============================================================================
+  
+  This file configures the global styling, custom scrollbars, and the active 
+  Tailwind CSS v4 theme variables used throughout the ChronosPro application.
+  
+  HOW TO CUSTOMIZE THE APP'S LOOK & FEEL:
+  
+  1. ACCENT & BRANDING COLORS:
+     - The application uses the custom theme variables defined in the @theme block below.
+     - Changing `--color-brand-blue` will update the main buttons, active sliders,
+       and selection highlight colors instantly across the workspace.
+     - Changing `--color-brand-blue-hover` controls the focus/hover feedback colors.
+
+  2. TYPOGRAPHY & FONTS:
+     - The fonts are fetched via the Google Fonts @import url on Line 36.
+     - `--font-sans` ("Inter") is mapped to standard readable text, descriptions, and labels.
+     - `--font-mono` ("JetBrains Mono") is used for technical specs, EXIF dates, and numbers.
+     
+  3. FONT SIZE SETTINGS (Where are they?):
+     - In Tailwind CSS, font sizes are generally specified INLINE in individual React 
+       components (e.g. `text-xs`, `text-sm`, or custom pixels like `text-[11px]`).
+     - You won't find a single global list of font sizes in types.ts or package.json.
+     - However, in Tailwind v4 you can override or add central font sizes right here 
+       under the `@theme` block! For example, adding:
+         `--text-tiny: 10px;` or `--text-xs: 12px;`
+       will let you use `text-tiny` or change what `text-xs` maps to globally.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Font Family Definitions */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Accent Branding Palette */
+  --color-brand-blue: #2563eb;               /* Primary theme blue (Active elements, buttons) */
+  --color-brand-blue-hover: #3b82f6;         /* Bright blue for hover triggers */
+  --color-brand-blue-glow: rgba(37, 99, 235, 0.2); /* Highlight glow overlays */
+}
+
+/* 
+  =============================================================================
+  CUSTOM SCROLLBAR STYLING
+  =============================================================================
+  Applies dark aesthetic slim scrollbars to lists, the activity log console, 
+  and the primary sequencing timeline.
+*/
+::-webkit-scrollbar {
+  width: 10px;       /* Scrollbar vertical track thickness (increased from 6px) */
+  height: 10px;      /* Scrollbar horizontal track thickness (increased from 6px) */
+}
+::-webkit-scrollbar-track {
+  background: #0f0f11; /* Deep matte black backing */
+}
+::-webkit-scrollbar-thumb {
+  background: #52525b; /* Zinc 600 - noticeably brighter for easy spotting and dragging */
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa; /* Zinc 400 - bright highlight on hover state */
+}
+
+/* Hide number input default browser arrows */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+

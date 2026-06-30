@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Ignore Electron Builder temporary artifacts but track final packaged executables
+release/*
+!release/*.AppImage
+!release/*.dmg
+!release/*.exe
+!release/*.zip
+!release/*.dmg.blockmap
+!release/*.exe.blockmap
