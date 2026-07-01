@@ -1,8 +1,8 @@
 # 🎬 ChronosPro Studio
 
-ChronosPro Studio is a powerful, privacy-first, offline-ready desktop and web-based timelapse creator and video compiler. Built with **React 19**, **Vite**, **TypeScript**, and **Tailwind CSS**, and wrapped in an **Electron** desktop container, it allows you to bundle high-resolution photo folders directly into beautifully-timed, visually stunning cinematic motion sequences entirely within your local browser sandbox or desktop environment.
+ChronosPro Studio is a powerful, privacy-first, offline-ready desktop and web-based timelapse creator, video compiler, and HEIC batch converter. Built with **React 19**, **Vite**, **TypeScript**, and **Tailwind CSS**, and wrapped in an **Electron** desktop container, this comprehensive two-part application lets you seamlessly batch-convert raw HEIC/HEIF images and bundle high-resolution photo folders directly into beautifully-timed, visually stunning cinematic motion sequences entirely within your local browser sandbox or desktop environment.
 
-No servers, no queues, and **zero data uploads**—your original high-resolution photos never leave your machine.
+No servers, no queues, and **zero data uploads**—your original high-resolution photos and converted files never leave your machine.
 
 ---
 
